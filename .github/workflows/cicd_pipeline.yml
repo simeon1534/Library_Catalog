@@ -24,6 +24,7 @@ jobs:
         node-version: 18.x
         cache: 'npm'
     - run: npm ci
+    - run: npm install -D @playwright/test   
     - run: npm run build --if-present
     - run: npm test
     
